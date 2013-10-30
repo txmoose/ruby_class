@@ -33,3 +33,14 @@ if_test(1)
 puts "This is the 0 integer test:"
 if_test(0)
 
+puts "A loop will now run *while* the variable \"var\" is less than 11:"
+var = 0
+my_array = []
+while var < 11
+  puts "var is now #{var}."
+  my_array[var] = rand(11)
+  var += 1
+end
+
+puts "The following \"for each\" loop will each each value of an array out:"
+my_array.each{ |x| print x, " -- " }
